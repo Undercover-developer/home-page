@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>News &amp; Updates — Oyindamola Koleoso</title>
+    <link>https://example.com/news/</link>
+    <description>News and updates from Oyindamola Koleoso.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Launched my personal blog</title>
+      <link>https://example.com/blog/</link>
+      <guid>https://example.com/blog/</guid>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
+      <description>Read posts on the new blog.</description>
+    </item>
+
+    <item>
+      <title>Added D‑CAS write-up to the projects page</title>
+      <link>https://example.com/projects/</link>
+      <guid>https://example.com/projects/</guid>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Expanded documentation on the D‑CAS project.</description>
+    </item>
+
+    <item>
+      <title>New paper on hyperlink emotion analysis in SNAM</title>
+      <link>https://doi.org/10.1007/s13278-024-01295-w</link>
+      <guid>https://doi.org/10.1007/s13278-024-01295-w</guid>
+      <pubDate>Mon, 15 Dec 2024 00:00:00 GMT</pubDate>
+      <description>Published in Social Network Analysis and Mining.</description>
+    </item>
+  </channel>
+</rss>

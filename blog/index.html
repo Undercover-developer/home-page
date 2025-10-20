@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyindamola Koleoso — Blog</title>
+  <meta name="description" content="Blog posts by Oyindamola Koleoso on AI, multi-agent systems, systems engineering, and distributed systems." />
+
+  <!-- LaTeX.css (same family as profile for consistency) -->
+  <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+
+  <style>
+    header h1 {
+      text-align: center;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 0.75rem 0 1.25rem;
+      flex-wrap: wrap;
+    }
+    .post-list h4 {
+      margin: 0.6rem 0;
+      font-weight: normal;
+    }
+    .post-list .date {
+      font-size: 0.85em;
+      color: #666;
+      margin-right: 0.4rem;
+      white-space: nowrap;
+    }
+    .post-list a {
+      text-decoration: none;
+    }
+    .post-list a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body id="top">
+  <header>
+    <h1><span class="latex">Blog</h1>
+  </header>
+
+  <center>
+    <div class="actions">
+      <button onclick="location.href='../index.html'">Home</button>
+      <button id="dark-mode-toggle">Toggle dark mode</button>
+    </div>
+  </center>
+
+  <main>
+    <article>
+      <h2>Posts</h2>
+
+      <div class="post-list">
+        <h4><span class="date">(2025-10-01)</span> <a href="01-multi-agent-intro.html">Multi-Agent Systems: A Gentle Intro</a></h4>
+        <h4><span class="date">(2025-09-15)</span> <a href="02-rag-patterns.html">RAG Patterns with LangChain</a></h4>
+        <h4><span class="date">(2025-08-20)</span> <a href="03-p2p-storage-go.html">Building P2P Storage in Go</a></h4>
+        <h4><span class="date">(2025-07-05)</span> <a href="04-cloud-visibility.html">Cloud Visibility: Metrics that Matter</a></h4>
+        <h4><span class="date">(2025-06-10)</span> <a href="05-agent-collaboration.html">Agent Collaboration in Smart Cities</a></h4>
+      </div>
+
+      <p class="no-indent" style="margin-top: 1.5rem;">
+        Want updates? Add this page to your bookmarks. RSS coming soon.
+      </p>
+    </article>
+  </main>
+
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page not found</title>
+  <meta name="description" content="Sorry, this page could not be found." />
+
+  <!-- LaTeX.css for consistent styling -->
+  <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+  <link rel="alternate" type="application/rss+xml" title="News RSS Feed" href="news/feed.xml" />
+
+  <style>
+    header h1 { text-align: center; }
+    .actions { display: flex; justify-content: center; gap: 0.6rem; margin: 0.75rem 0 1.25rem; flex-wrap: wrap; }
+    .hero {
+      text-align: center;
+      margin: 1.25rem 0 0.75rem;
+    }
+    .hero .code {
+      font-size: 3rem;
+      letter-spacing: 0.05em;
+      margin: 0.2rem 0 0.6rem;
+    }
+    .hero p { margin: 0.2rem 0; }
+    .help { margin-top: 1.5rem; }
+    .link-list { columns: 1; }
+    @media (min-width: 800px) {
+      .link-list { columns: 2; column-gap: 2rem; }
+    }
+    .link-list a { text-decoration: none; }
+    .link-list a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <h1><span class="latex">404 — Page not found</span></h1>
+  </header>
+
+  <center>
+    <div class="actions">
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='blog/index.html'">Blog</button>
+      <button onclick="location.href='projects/index.html'">Projects</button>
+      <button onclick="location.href='news/index.html'">News</button>
+      <button onclick="location.href='news/feed.xml'">RSS</button>
+      <button id="dark-mode-toggle">Toggle dark mode</button>
+    </div>
+  </center>
+
+  <main>
+    <article>
+      <div class="hero">
+        <div class="code">404</div>
+        <p>Oops — the page you’re looking for doesn’t exist or may have moved.</p>
+        <p>Here are some helpful links to get you back on track:</p>
+      </div>
+
+      <section class="help">
+        <h2>Quick links</h2>
+        <ul class="link-list">
+          <li><a href="index.html">Home / Profile</a></li>
+          <li><a href="blog/index.html">Blog — posts and articles</a></li>
+          <li><a href="projects/index.html">Projects — selected work</a></li>
+          <li><a href="news/index.html">News & Updates</a></li>
+          <li><a href="news/feed.xml">RSS — subscribe to updates</a></li>
+        </ul>
+
+        <h3>Still stuck?</h3>
+        <ul>
+          <li>Double‑check the URL for typos.</li>
+          <li>Go back to the previous page in your browser.</li>
+          <li>
+            Report a broken link: <a href="mailto:oyindamola.koleoso@utdallas.edu?subject=Broken%20link%20report&body=I%20found%20a%20broken%20link%20on%20your%20site%3A%20%28paste%20URL%29">email me</a>.
+          </li>
+        </ul>
+        <p style="text-align: right;"><a href="#top">[Top]</a></p>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark');
+    });
+  </script>
+</body>
+</html>

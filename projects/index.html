@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Oyindamola Koleoso</title>
+  <meta name="description" content="Selected projects by Oyindamola Koleoso." />
+  <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+  <style>
+    header h1 { text-align: center; }
+    .actions { display: flex; justify-content: center; gap: 0.6rem; margin: 0.75rem 0 1.25rem; flex-wrap: wrap; }
+    .project-list h3 { margin-bottom: 0.25rem; }
+    .project { margin-bottom: 1.25rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: .35rem .45rem; margin-top: .25rem; }
+    .tag { border: 1px solid #d0d0d0; border-radius: 999px; padding: .05rem .45rem; font-size: .9em; background: #fafafa; }
+    @media (prefers-color-scheme: dark) { .tag { background: #1f1f1f; border-color: #3a3a3a; } }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <h1><span class="latex">Projects</span></h1>
+  </header>
+
+  <center>
+    <div class="actions">
+      <button onclick="location.href='../index.html'">Home</button>
+      <button onclick="location.href='../blog/index.html'">Blog</button>
+    </div>
+  </center>
+
+  <main>
+    <article class="project-list">
+      <h2>Selected Projects</h2>
+
+      <section class="project">
+        <h3>D-CAS: Distributed Content-Addressable Storage</h3>
+        <p>Peer-to-peer distributed storage system implemented in Golang with TCP networking and SHA1-based integrity checks. Features automatic data replication, fault tolerance, and content-addressable architecture for efficient data retrieval.</p>
+        <div class="tags">
+          <span class="tag">Go</span>
+          <span class="tag">Networking</span>
+          <span class="tag">P2P</span>
+        </div>
+      </section>
+
+      <section class="project">
+        <h3>Cloud Visibility Dashboard</h3>
+        <p>Real-time analytics platform for cloud spend optimization and system health monitoring. Integrates with multiple cloud providers to provide unified visibility into infrastructure costs, performance metrics, and resource utilization.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Cloud</span>
+        </div>
+      </section>
+
+      <p style="text-align: right;"><a href="#top">[Top]</a></p>
+    </article>
+  </main>
+</body>
+</html>

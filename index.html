@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyindamola Koleoso | SCALA Lab - UT Dallas</title>
+    <meta name="description"
+        content="Ph.D. student in Computer Science at UT Dallas, researching multi-agent systems and distributed intelligence." />
+
+    <!-- LaTeX.css -->
+    <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+    <link rel="alternate" type="application/rss+xml" title="News RSS Feed" href="news/feed.xml" />
+
+    <style>
+        ol.bibliography>li::marker {
+            content: "[" counter(list-item) "]\2003";
+        }
+
+        table.borderless,
+        table.borderless thead,
+        table.borderless tbody,
+        table.borderless th,
+        table.borderless td,
+        table.borderless tr {
+            border: none !important;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            font-weight: normal;
+            margin-top: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        h1 {
+            font-size: 2em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3em;
+        }
+
+        a {
+            /* color: #004080; */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 1.5em;
+        }
+
+        section {
+            margin-top: 2em;
+        }
+
+        ul {
+            margin-left: 1.5em;
+        }
+
+
+        .projects {
+            columns: 2;
+            column-gap: 2em;
+        }
+
+        dl.skills-dl {
+            column-gap: 2rem;
+        }
+
+        @media (min-width: 900px) {
+            dl.skills-dl {
+                columns: 2;
+            }
+        }
+
+        dl.skills-dl dt {
+            font-weight: 600;
+            margin-top: 0.75rem;
+            break-inside: avoid;
+        }
+
+        dl.skills-dl dd {
+            margin-left: 0;
+            margin-bottom: 0.75rem;
+            break-inside: avoid;
+        }
+
+        .skill-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem 0.5rem;
+            margin-top: 0.4rem;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border: 1px solid #d0d0d0;
+            border-radius: 999px;
+            font-size: 0.95em;
+            white-space: nowrap;
+            background: #fafafa;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .skill-badge {
+                background: #1f1f1f;
+                border-color: #3a3a3a;
+            }
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-top: 1rem;
+        }
+
+        .action-buttons button {
+            cursor: pointer;
+        }
+
+        /* News & updates */
+        .news-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.5rem;
+        }
+
+        .news-list li {
+            margin: 0.35rem 0;
+        }
+
+        .news-list .date {
+            font-size: 0.9em;
+            color: #666;
+            margin-right: 0.4rem;
+            white-space: nowrap;
+        }
+
+        .news-list a {
+            text-decoration: none;
+        }
+
+        .news-list a:hover {
+            text-decoration: underline;
+        }
+
+        .link-list { columns: 1; }
+    @media (min-width: 800px) {
+      .link-list { columns: 2; column-gap: 2rem; }
+    }
+    .link-list a { text-decoration: none; }
+    .link-list a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            margin-top: 3em;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1>Oyindamola Koleoso</h1>
+        <p class="author">
+            Ph.D. Student, Computer Science<br />
+            University of Texas at Dallas<br />
+        </p>
+    </header>
+
+    <div class="abstract">
+        <h2>About</h2>
+        <p>
+            I am a Ph.D. student in Computer Science at the University of Texas at Dallas,
+            working at the <strong>SCALA Lab</strong> (Smart Cities Applied Research Lab).
+            My research focuses on <strong>multi-agent systems</strong>, distributed intelligence,
+            and AI-driven smart infrastructure. I'm passionate about building scalable, data-driven
+            systems that enable autonomous collaboration across intelligent agents.
+        </p>
+        <div class="action-buttons">
+            <button onclick="location.href='mailto:oyindamola.koleoso@utdallas.edu'">✉️ Email</button>
+            <button onclick="location.href='https://linkedin.com/in/oyindamola-koleoso'">LinkedIn</button>
+            <button onclick="location.href='https://github.com/Undercover-developer'">GitHub</button>
+            <button onclick="location.href='https://www.utdallas.edu'">SCALA Lab</button>
+            <button onclick="location.href='blog/index.html'">✍️ Blog</button>
+        </div>
+    </div>
+
+    <main>
+        <article>
+            <h2>Contents</h2>
+            <ul class="link-list">
+                <li><a href="#news-updates">News &amp; Updates</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#technical-skills">Technical Skills</a></li>
+                <li><a href="#research-experience">Research &amp; Experience</a></li>
+                <li><a href="#selected-projects">Selected Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="blog/index.html">Blog (all posts)</a></li>
+                <li><a href="projects/index.html">Projects (full list)</a></li>
+                <li><a href="news/index.html">News &amp; Updates (archive)</a></li>
+                <li><a href="news/feed.xml">RSS feed</a></li>
+            </ul>
+            <h2 id="news-updates">News &amp; Updates</h2>
+            <ul class="news-list">
+                <li><span class="date">(2025-10-19)</span> Launched my personal blog — <a href="blog/index.html">read
+                        posts</a>.</li>
+                <li><span class="date">(2025-09-30)</span> Added D‑CAS write-up to the projects page.</li>
+                <li><span class="date">(2024-12-15)</span> New paper on hyperlink emotion analysis in SNAM — <a
+                        href="https://doi.org/10.1007/s13278-024-01295-w" target="_blank">DOI</a>.</li>
+            </ul>
+            <p style="text-align: right;"><a href="news/index.html">More updates &rarr;</a></p>
+            <h2 id="education">Education</h2>
+            <p>
+            <table class="col-1-l col-2-c borderless">
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th width="20%">Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Doctor of Philosophy (Ph.D.), Computer Science, University of Texas at Dallas,
+                            Supervisor: <a href="https://profiles.utdallas.edu/rymw" target="_blank">Prof. Rym
+                                Zalila-Wenkstern</a>
+                        </td>
+                        <td>2025 – Present</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Master of Science (M.S.), Computer Science, University of Arkansas at Little Rock,
+                            Supervisor: <a href="https://sites.google.com/ualr.edu/prof-nitin-agarwal/"
+                                target="_blank">Prof. Nitin Agarwal</a>
+                        </td>
+                        <td>2023 – 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+            </p>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+
+            <h2 id="technical-skills">Technical Skills</h2>
+            <dl class="skills-dl">
+                <dt>Programming Languages</dt>
+                <dd>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Golang</span>
+                    </div>
+                </dd>
+
+                <dt>Web Technologies</dt>
+                <dd>
+                    <div class="skill-badges">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Vue</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Spring Boot</span>
+                    </div>
+                </dd>
+
+                <dt>Cloud & DevOps</dt>
+                <dd>
+                    <div class="skill-badges">
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">GCP</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">Docker</span>
+                    </div>
+                </dd>
+
+                <dt>AI & Machine Learning</dt>
+                <dd>
+                    <div class="skill-badges">
+                        <span class="skill-badge">PyTorch</span>
+                        <span class="skill-badge">LangChain</span>
+                        <span class="skill-badge">Hugging Face</span>
+                    </div>
+                </dd>
+
+                <dt>Data Engineering</dt>
+                <dd>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Apache Spark</span>
+                        <span class="skill-badge">Apache Kafka</span>
+                        <span class="skill-badge">Grafana</span>
+                    </div>
+                </dd>
+
+                <dt>Databases</dt>
+                <dd>
+                    <div class="skill-badges">
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">Redis</span>
+                    </div>
+                </dd>
+            </dl>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+
+
+
+            <h2 id="research-experience">Research & Experience</h2>
+
+            <h3>Researcher, COSMOS Research Center</h3>
+            <p><em>August 2023 – May 2025</em></p>
+            <p>
+                Developed retrieval-augmented generation (RAG) pipelines using Llama, LangChain, and FAISS.
+                Engineered large-scale data pipelines with Apache Kafka and Spark for distributed processing
+                of research data.
+            </p>
+
+            <h3>Software Engineer, Flutterwave</h3>
+            <p><em>February 2023 – June 2025</em></p>
+            <p>
+                Scaled distributed payment APIs serving 500,000+ daily transactions with 99.99% uptime.
+                Built fault-tolerant microservices architecture handling mission-critical financial operations
+                across multiple African markets.
+            </p>
+
+            <h3>Fullstack Engineer, Tolaram Group</h3>
+            <p><em>March 2022 – February 2023</em></p>
+            <p>
+                Built fleet management systems using Node.js, PostgreSQL, and WebSockets for real-time tracking.
+                Deployed cloud-native applications on Google Cloud Platform with containerization and CI/CD pipelines.
+            </p>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+
+            <h2 id="selected-projects">Selected Projects</h2>
+
+            <h3>D-CAS: Distributed Content-Addressable Storage</h3>
+            <p>
+                Peer-to-peer distributed storage system implemented in Golang with TCP networking and
+                SHA1-based integrity checks. Features automatic data replication, fault tolerance, and
+                content-addressable architecture for efficient data retrieval.
+            </p>
+
+            <h3>Cloud Visibility Dashboard</h3>
+            <p>
+                Real-time analytics platform for cloud spend optimization and system health monitoring.
+                Integrates with multiple cloud providers to provide unified visibility into infrastructure
+                costs, performance metrics, and resource utilization.
+            </p>
+            <p style="text-align: right;"><a href="projects/index.html">More projects &rarr;</a></p>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+
+            <h2 id="publications">Publications</h2>
+            <p>
+            <ol class="bibliography">
+                <li>
+                    Amure, R., Akinnubi, A., <strong>Koleoso, O.</strong> (2024). Toward Improved Clustering for Textual
+                    Data.
+                    In: Proceedings of Third International Conference
+                    on Computing and Communication Networks. ICCCN 2023. Lecture Notes in Networks and Systems, vol 917.
+                    Springer, Singapore. <a href="https://doi.org/10.1007/978-981-97-0892-5_32"
+                        target="_blank">https://doi.org/10.1007/978-981-97-0892-5_32</a>
+                </li>
+                <li>
+                    Mbila-Uma, S., <strong>Koleoso, O.</strong>, Umoga, I. et al. (2024). The Multi-attribute impact of
+                    hyperlinks in blogs: an emotion-centric approach. <i>Soc. Netw. Anal. Min.</i> <b>14</b>, 134
+                    (2024). <a href="https://doi.org/10.1007/s13278-024-01295-w"
+                        target="_blank">https://doi.org/10.1007/s13278-024-01295-w</a>
+                </li>
+            </ol>
+            </p>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+
+            <h2 id="teaching">Teaching</h2>
+            <p>
+                During my Masters and Ph.D. studies, I conducted and assisted in teaching several classes, including:
+            <ul>
+                <li><a href="https://catalog.utdallas.edu/2025/undergraduate/courses/se4381" target="_blank">SE 4381 -
+                        Software Project Planning and Management</a></li>
+                <li><a href="https://catalog.utdallas.edu/2025/undergraduate/courses/cs4347" target="_blank">CS 4347 -
+                        Database Systems</a></li>
+                <li><a href="https://ualr.catalog.acalog.com/preview_course_nopop.php?catoid=37&coid=120954"
+                        target="_blank">IFSC 5360 - Social Computing</a></li>
+            </ul>
+            </p>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Oyindamola Koleoso &mdash; Smart Cities Applied Research Lab, UT Dallas</p>
+    </footer>
+</body>
+
+</html>
