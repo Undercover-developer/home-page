@@ -157,12 +157,24 @@
             text-decoration: underline;
         }
 
-        .link-list { columns: 1; }
-    @media (min-width: 800px) {
-      .link-list { columns: 2; column-gap: 2rem; }
-    }
-    .link-list a { text-decoration: none; }
-    .link-list a:hover { text-decoration: underline; }
+        .link-list {
+            columns: 1;
+        }
+
+        @media (min-width: 800px) {
+            .link-list {
+                columns: 2;
+                column-gap: 2rem;
+            }
+        }
+
+        .link-list a {
+            text-decoration: none;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+        }
 
         footer {
             text-align: center;
@@ -218,7 +230,8 @@
             </ul>
             <h2 id="news-updates">News &amp; Updates</h2>
             <ul class="news-list">
-                <li><span class="date">(2025-11-24)</span> Accepted into  IEEE ITSS Standards Committee (Ref: IEEE P3538 Guide for Metadata on Road Accidents in Low- and Middle-Income Countries and Regions).</li>
+                <li><span class="date">(2025-11-24)</span> Accepted into IEEE ITSS Standards Committee (Ref: IEEE P3538
+                    Guide for Metadata on Road Accidents in Low- and Middle-Income Countries and Regions).</li>
                 <li><span class="date">(2025-10-19)</span> Launched my personal blog.</li>
             </ul>
             <p style="text-align: right;"><a href="news/index.html">More updates &rarr;</a></p>
@@ -253,7 +266,7 @@
             </p>
             <p style="text-align: right;"><a href="#top">[Top]</a></p>
 
-            <h2 id="technical-skills">Technical Skills</h2>
+            <!-- <h2 id="technical-skills">Technical Skills</h2>
             <dl class="skills-dl">
                 <dt>Programming Languages</dt>
                 <dd>
@@ -270,7 +283,8 @@
                     <div class="skill-badges">
                         <span class="skill-badge">React</span>
                         <span class="skill-badge">Vue</span>
-                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Fast API</span>
+                        <span class="skill-badge">Node.js</span> 
                         <span class="skill-badge">Spring Boot</span>
                     </div>
                 </dd>
@@ -312,7 +326,7 @@
                     </div>
                 </dd>
             </dl>
-            <p style="text-align: right;"><a href="#top">[Top]</a></p>
+            <p style="text-align: right;"><a href="#top">[Top]</a></p> -->
 
 
 
@@ -344,6 +358,12 @@
 
             <h2 id="selected-projects">Selected Projects</h2>
 
+            <h3>Autonomous Robot with Custom RTOS</h3>
+            <p>
+                Python-based real-time operating system for an autonomous robot integrating OpenCV vision, environment
+                mapping, and obstacle-aware navigation. The robot perceives its surroundings, detects objects, and
+                navigates autonomously using real-time task scheduling and sensor fusion.
+            </p>
             <h3>D-CAS: Distributed Content-Addressable Storage</h3>
             <p>
                 Peer-to-peer distributed storage system implemented in Golang with TCP networking and
@@ -351,12 +371,6 @@
                 content-addressable architecture for efficient data retrieval.
             </p>
 
-            <h3>Cloud Visibility Dashboard</h3>
-            <p>
-                Real-time analytics platform for cloud spend optimization and system health monitoring.
-                Integrates with multiple cloud providers to provide unified visibility into infrastructure
-                costs, performance metrics, and resource utilization.
-            </p>
             <p style="text-align: right;"><a href="projects/index.html">More projects &rarr;</a></p>
             <p style="text-align: right;"><a href="#top">[Top]</a></p>
 
