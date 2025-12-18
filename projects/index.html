@@ -14,6 +14,14 @@
     .tags { display: flex; flex-wrap: wrap; gap: .35rem .45rem; margin-top: .25rem; }
     .tag { border: 1px solid #d0d0d0; border-radius: 999px; padding: .05rem .45rem; font-size: .9em; background: #fafafa; }
     @media (prefers-color-scheme: dark) { .tag { background: #1f1f1f; border-color: #3a3a3a; } }
+    figure {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      /* margin-inline-start: 40px; */
+      margin-inline-end: 40px;
+      unicode-bidi: isolate;
+    }
   </style>
 </head>
 <body id="top">
@@ -30,7 +38,17 @@
 
   <main>
     <article class="project-list">
-      <h2>Selected Projects</h2>
+
+      <section class="project">
+        <h3>Autonomous Robot with Custom RTOS</h3>
+        <figure id="rtos"><img src="./images/RTOS.jpg" loading="lazy" alt="Autonomous Robot RTOS"></figure>
+        <p>Built a Python-based real-time operating system for an autonomous robot integrating OpenCV vision, environment mapping, and obstacle-aware navigation. The robot perceives its surroundings, detects objects, and navigates autonomously using real-time task scheduling and sensor fusion.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">RTOS</span>
+        </div>
+      </section>
 
       <section class="project">
         <h3>D-CAS: Distributed Content-Addressable Storage</h3>
