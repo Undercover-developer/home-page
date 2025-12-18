@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post Title — Oyindamola Koleoso</title>
+    <meta name="description" content="A brief description of your blog post content." />
+
+    <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+
+    <style>
+        ol.bibliography>li::marker {
+            content: "[" counter(list-item) "]\2003";
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        .post-meta {
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            margin: 0.5em 0 1.5em;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 0.6rem;
+            margin: 0.75rem 0 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .back-link {
+            text-align: right;
+            margin-bottom: 2em;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            code {
+                background: #2a2a2a;
+            }
+        }
+
+        article {
+            line-height: 1.6;
+        }
+
+        /* table.borderless,
+        table.borderless thead,
+        table.borderless tbody,
+        table.borderless th,
+        table.borderless td,
+        table.borderless tr {
+            border: none !important;
+        } */
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1>Blog Post Title</h1>
+        <div class="post-meta">
+            <span class="date">Published: December 18, 2025</span>
+        </div>
+    </header>
+
+    <center>
+        <div class="actions">
+            <button onclick="location.href='index.html'">← Back to Blog</button>
+            <button onclick="location.href='../index.html'">Home</button>
+        </div>
+    </center>
+
+    <main>
+        <article>
+            <!-- 1: H2 with paragraph -->
+            <h2>Main Section Title</h2>
+            <p>
+                This is a standard paragraph with regular text. You can include <strong>bold text</strong> for emphasis,
+                <i>italic text</i> for references, and <code>inline code</code> for technical terms or variable names.
+                Links are also supported: <a href="https://example.com" target="_blank">visit example.com</a>.
+            </p>
+
+            <!-- 2: H3 with unordered list -->
+            <h3>Key Features</h3>
+            <p>
+                This section demonstrates how to use unordered lists:
+            </p>
+            <ul>
+                <li><strong>First feature:</strong> Description of the first key point or feature.</li>
+                <li><strong>Second feature:</strong> Description of the second key point or feature.</li>
+                <li><strong>Third feature:</strong> Description of the third key point or feature.</li>
+                <li>Plain list items without bold prefixes are also supported.</li>
+            </ul>
+
+            <!-- 3: H3 with table -->
+            <h3>Comparison Table</h3>
+            <p>
+                Below is an example of a borderless table used for structured comparisons:
+            </p>
+            <p>
+            <table class="col-1-l col-2-c borderless">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th width="20%">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Item One</strong> — A brief description of the first item, which can include
+                            multiple sentences
+                            and even inline <code>code</code>.
+                        </td>
+                        <td>Type A</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Item Two</strong> — You can also include <a href="https://example.com"
+                                target="_blank">hyperlinks</a>
+                            within table cells.
+                        </td>
+                        <td>Type B</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Item Three</strong> — Tables are useful for presenting related information in an
+                            organized manner.
+                        </td>
+                        <td>Type C</td>
+                    </tr>
+                </tbody>
+            </table>
+            </p>
+
+
+            <!-- 5: Nested H3 under another concept -->
+            <h3>Code Examples</h3>
+            <p>
+                You can emphasize code elements inline using the <code>code</code> tag. For longer code blocks,
+                consider using a code highlighting solution or simply formatting with <code>pre</code> tags if needed.
+            </p>
+            <p>
+                Example variable names: <code>myVariable</code>, <code>calculateSum()</code>, <code>data['key']</code>.
+            </p>
+
+            <!-- 6: Conclusion -->
+            <h2>Conclusion</h2>
+            <p>
+                This template demonstrates the main component types available for blog posts:
+                headings, paragraphs, lists, tables, references, and inline formatting.
+                Use this as a starting point for your own blog posts, customizing the content while maintaining the
+                structure
+                and styling.
+            </p>
+
+            <!-- 7: References at the end -->
+            <h2>Sample References & Further Reading</h2>
+            <p>
+            <ol class="bibliography">
+                <li>
+                    LaTeX.css Documentation. Available at <a href="https://latex.css/"
+                        target="_blank">https://latex.css/</a>.
+                    The CSS framework used for styling this blog.
+                </li>
+                <li>
+                    For more examples, visit the <a href="index.html">blog index</a> to see published posts.
+                </li>
+            </ol>
+            </p>
+            <!-- H3 with ordered list (bibliography) -->
+            <p>
+                For academic or technical content, use an ordered bibliography list:
+            </p>
+            <p>
+            <ol class="bibliography">
+                <li>
+                    Author Name (Year). <i>Book Title or Article Title</i>.
+                    Publisher or Journal. <a href="https://doi.org/example" target="_blank">https://doi.org/example</a>
+                </li>
+                <li>
+                    Smith, J., &amp; Johnson, A. (2023). Technical Article Title.
+                    <i>Journal of Technical Writing</i>, 15(3), 123–145.
+                    <a href="https://doi.org/example" target="_blank">https://doi.org/example</a>
+                </li>
+                <li>
+                    Multiple authors can be included. See the education and publications sections on the main page for
+                    examples
+                    of proper academic citation formatting.
+                </li>
+            </ol>
+            </p>
+            <p style="text-align: right; margin-top: 2em;">
+                <a href="#top">[Top]</a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Oyindamola Koleoso</p>
+    </footer>
+</body>
+
+</html>
