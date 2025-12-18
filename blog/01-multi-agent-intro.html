@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Agent Systems: A Gentle Intro — Oyindamola Koleoso</title>
+    <meta name="description"
+        content="A gentle, academically grounded introduction to multi-agent systems, intelligent agents, decentralization, and the limitations of modern agentic AI workflows." />
+
+    <link rel="stylesheet" href="https://unpkg.com/latex.css/style.min.css" />
+
+    <style>
+        ol.bibliography>li::marker {
+            content: "[" counter(list-item) "]\2003";
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        .post-meta {
+            text-align: center;
+            font-size: 0.95em;
+            color: #666;
+            margin: 0.5em 0 1.5em;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 0.6rem;
+            margin: 0.75rem 0 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .back-link {
+            text-align: right;
+            margin-bottom: 2em;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            code {
+                background: #2a2a2a;
+            }
+        }
+
+        article {
+            line-height: 1.65;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1>Multi-Agent Systems: A Gentle Intro</h1>
+        <div class="post-meta">
+            <span class="date">Published: December 18, 2025</span>
+        </div>
+    </header>
+
+    <center>
+        <div class="actions">
+            <button onclick="location.href='index.html'">← Back to Blog</button>
+            <button onclick="location.href='../index.html'">Home</button>
+        </div>
+    </center>
+
+    <main>
+        <article>
+
+            <h2>What Is an Agent?</h2>
+            <p>
+                Before discussing multi-agent systems, we must first answer a deceptively simple question:
+                <strong>what is an agent?</strong>
+            </p>
+            <p>
+                In classical artificial intelligence, an <em>agent</em> is an entity that
+                <strong>perceives its environment through sensors</strong> and
+                <strong>acts upon that environment through actuators</strong>.
+                This definition, popularized by Russell and Norvig, emphasizes interaction, autonomy,
+                and decision-making under uncertainty.
+            </p>
+            <p>
+                Importantly, an agent is not defined by its internal implementation.
+                It may be rule-based, learning-based, symbolic, or statistical.
+                What matters is that it continuously participates in a
+                <em>perception–decision–action loop</em>.
+            </p>
+
+            <h2>Agents in the Age of LLM(s)</h2>
+            <p>
+                In today’s AI ecosystem, the term <em>agent</em> is frequently applied to systems that
+                are little more than scripted workflows around large language models.
+                A typical example involves an LLM calling tools, executing steps in sequence,
+                and returning a final response.
+            </p>
+            <p>
+                While such systems may be useful, they differ fundamentally from agents as defined in
+                the AI literature. Most lack:
+            </p>
+            <ul>
+                <li>Persistent autonomy</li>
+                <li>Independent control loops</li>
+                <li>Direct interaction with an evolving environment</li>
+                <li>Robust real-time decision-making</li>
+            </ul>
+            <p>
+                Calling these systems “agents” is often a matter of convenience or marketing,
+                rather than a reflection of their underlying architecture.
+            </p>
+
+            <h2>What Is an Intelligent Agent?</h2>
+            <p>
+                An <strong>intelligent agent</strong> is not merely reactive.
+                It selects actions that maximize expected performance relative to a goal or utility function.
+                Intelligence, in this sense, refers to <em>rational behavior</em>,
+                not human-like cognition.
+            </p>
+            <p>
+                Intelligent agents typically exhibit:
+            </p>
+            <ul>
+                <li><strong>Perception:</strong> sensing and interpreting environmental signals</li>
+                <li><strong>Decision-making:</strong> selecting actions under uncertainty</li>
+                <li><strong>Adaptation:</strong> improving behavior over time</li>
+                <li><strong>Goal-directedness:</strong> acting toward explicit objectives</li>
+            </ul>
+
+            <h2>What Makes a System Multi-Agent?</h2>
+            <p>
+                A system is considered a <strong>multi-agent system (MAS)</strong> when it is composed
+                of multiple intelligent agents that interact within a shared environment.
+                Crucially, this interaction may be cooperative, competitive, or mixed.
+            </p>
+            <p>
+                However, not all systems with multiple components qualify as true MAS.
+                The defining property is <strong>decentralization</strong>.
+            </p>
+
+            <h3>Decentralization as a First-Class Requirement</h3>
+            <p>
+                In a genuine multi-agent system, no single agent possesses global control.
+                Each agent operates based on local information, communicates with peers,
+                and coordinates behavior without relying on a central orchestrator.
+            </p>
+            <p>
+                Once a system collapses control into a single coordinating entity,
+                it effectively becomes a monolithic or hierarchical system,
+                even if it contains many subcomponents.
+            </p>
+
+            <h3>Most “Multi-Agent” Systems Are Pipelines</h3>
+            <p>
+                Many modern systems labeled as multi-agent are better described as
+                <strong>pipelines or workflows</strong>.
+                These systems decompose tasks into steps and execute them sequentially
+                under centralized control.
+            </p>
+
+            <table class="col-1-l col-2-c borderless">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>True Multi-Agent System</th>
+                        <th>LLM Workflow / Pipeline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Control</td>
+                        <td>Decentralized</td>
+                        <td>Centralized</td>
+                    </tr>
+                    <tr>
+                        <td>Decision-making</td>
+                        <td>Local and concurrent</td>
+                        <td>Sequential and scripted</td>
+                    </tr>
+                    <tr>
+                        <td>Failure mode</td>
+                        <td>Graceful degradation</td>
+                        <td>Single point of failure</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptation</td>
+                        <td>Continuous and distributed</td>
+                        <td>Limited or manual</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Core Capabilities of Multi-Agent Systems</h2>
+            <p>
+                For a system to meaningfully qualify as multi-agent, it must support
+                several core capabilities:
+            </p>
+            <ul>
+                <li><strong>Real-time decision-making:</strong> agents respond continuously to changes</li>
+                <li><strong>Perception:</strong> agents observe the environment independently</li>
+                <li><strong>Communication:</strong> agents exchange information via protocols</li>
+                <li><strong>Coordination:</strong> agents resolve conflicts and align actions</li>
+                <li><strong>Planning:</strong> agents reason over future states and strategies</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>
+                Multi-agent systems are not a recent invention, nor are they synonymous
+                with modern “agentic” AI tooling.
+                They represent a deep and rigorous field focused on decentralized intelligence,
+                coordination, and emergent behavior.
+            </p>
+            <p>
+                As interest in agent-based systems continues to grow,
+                maintaining conceptual clarity is essential.
+                Not every workflow is a multi-agent system,
+                and not every tool-calling LLM is an agent.
+            </p>
+
+            <h2>References & Further Reading</h2>
+            <ol class="bibliography">
+                <li>
+                    Russell, S. J., &amp; Norvig, P. (2021).
+                    <i>Artificial Intelligence: A Modern Approach</i> (4th ed.).
+                    Pearson.
+                </li>
+                <li>
+                    Wooldridge, M. (2009).
+                    <i>An Introduction to MultiAgent Systems</i> (2nd ed.).
+                    John Wiley &amp; Sons.
+                </li>
+                <li>
+                    Shoham, Y., &amp; Leyton-Brown, K. (2009).
+                    <i>Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations</i>.
+                    Cambridge University Press.
+                </li>
+                <li>
+                    Wikipedia contributors. (2025).
+                    <i>Multi-agent system</i>.
+                    <a href="https://en.wikipedia.org/wiki/Multi-agent_system" target="_blank">
+                        https://en.wikipedia.org/wiki/Multi-agent_system
+                    </a>
+                </li>
+                <li>
+                    XMPRO. (2024).
+                    <i>Beyond LLMs: Why true multi-agent systems are 90% business process intelligence</i>.
+                    <a href="https://xmpro.com/beyond-llms-why-true-multi-agent-systems-are-90-business-process-intelligence/"
+                        target="_blank">
+                        Link
+                    </a>
+                </li>
+            </ol>
+
+            <p style="text-align: right; margin-top: 2em;">
+                <a href="#top">[Top]</a>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Oyindamola Koleoso</p>
+    </footer>
+</body>
+
+</html>
